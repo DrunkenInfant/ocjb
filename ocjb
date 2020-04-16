@@ -20,7 +20,7 @@ connect()
   -p 2222:22 \
   -e SSH_AUTH_KEY="$(cat ~/.ssh/id_rsa.pub)" \
   ocjb \
-  openconnect --no-dtls $1
+  openconnect --no-dtls $@
 }
 
 dns()
